@@ -20,9 +20,10 @@
         <button type="submit">Add</button>
       </form>
       <ul>
-        <% if(plName.length > 0) { %>
-        <li><%= plName %></li>
-        <% }else{ %>
+        <% if(plName.length > 0) { %> <% for(let i = 0; i < plName.length;
+        i++){%>
+        <li><%= plName[i] %></li>
+        <% } %> <% }else{ %>
         <p>NO data found</p>
         <% } %>
       </ul>
