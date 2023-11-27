@@ -11,6 +11,9 @@ const pLanguages = [];
 app.get("/", (req, res) => {
   res.render("index", { plName: pLanguages });
 });
+app.get("/contact", (req, res) => {
+  res.render("contact", {});
+});
 
 app.post("/", (req, res) => {
   const pLang = req.body.pLang;
