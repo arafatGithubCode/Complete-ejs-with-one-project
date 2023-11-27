@@ -20,7 +20,11 @@
         <button type="submit">Add</button>
       </form>
       <ul>
+        <% if(plName.length > 0) { %>
         <li><%= plName %></li>
+        <% }else{ %>
+        <p>NO data found</p>
+        <% } %>
       </ul>
     </main>
     <footer>
